@@ -1,6 +1,7 @@
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
-import Fourmulario from './components/Formulario.jsx'
-import Biblioteca from './components/Biblioteca.jsx'
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import Fourmulario from './components/Formulario';
+import Biblioteca from './components/Biblioteca';
+import Registro from './components/Registro';
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
     </Link>
 
     <Routes>
-      <Route path='/' element={<Fourmulario/>}></Route>
-      <Route path='/biblioteca' element={<Biblioteca/>}/>
+      <Route path='/' element={<Fourmulario />}></Route>
+      <Route path='/registro' element={ <Registro /> }/>
+      <Route path='/biblioteca' element={<Biblioteca />}/>
     </Routes>
     </BrowserRouter>
   )

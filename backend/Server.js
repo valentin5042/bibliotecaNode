@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 
 import db from './config/ConfigDB.js';
 import usuarioRoutes from './routes/UsuarioRuta.js';
+import libroRoutes from './routes/LibrosRutas.js';
 
 
 const Server = express();
@@ -23,6 +24,7 @@ Server.use(cors({ origin: '*' }));
 
 
 Server.use('/', usuarioRoutes);
+Server.use('/libros', libroRoutes);
 
 
 
